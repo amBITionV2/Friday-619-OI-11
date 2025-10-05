@@ -1,0 +1,54 @@
+body {
+  background: radial-gradient(circle at center, #0d1b2a 0%, #000 100%);
+  font-family: Arial, sans-serif;
+  color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#orb {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #4dd0e1, #006064);
+  box-shadow: 0 0 30px #4dd0e1, 0 0 60px #26c6da, 0 0 90px #00acc1;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.btn {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.off { background: #263238; color: #b0bec5; }
+.on { background: #00796b; color: #e0f2f1; }
+
+.controls p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b2ebf2;
+}
